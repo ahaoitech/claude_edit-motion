@@ -97,7 +97,7 @@ export const Main: React.FC = () => {
         src={staticFile('audio/bgm.mp3')}
         volume={(f) => {
           const time = f / fps;
-          const fadeIn = interpolate(time, [0, 0.6], [0, 0.34], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+          const fadeIn = interpolate(time, [0, 0.6], [0, 0.82], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
           const fadeOut = interpolate(time, [29.3, 30], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
           return fadeIn * fadeOut;
         }}
